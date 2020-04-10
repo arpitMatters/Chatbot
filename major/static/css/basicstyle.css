@@ -1,0 +1,37 @@
+body{
+  background-color: rgb(220, 220, 220);
+}
+h2{
+  font-family: sans-serif;
+  text-align: center;
+  color: red;
+  position: fixed;
+    top: 40%;
+    left: 35%;
+}
+.heading{
+  background-color:#FFAF74;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+    top: 40%;
+}
+a{
+  text-decoration: none;
+  border: 2px solid #74c4ff;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: red;
+}
+.logsign{
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 47%;
+}
+#newanchor{
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 43%;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>you have logged in successfully</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style5.css') }}">
+  </head>
+  <body>
+    <div class="heading">
+      <h2>Web Assistant</h2>
+    </div>
+      <p title="logged in username">Welcome!! {{user}} </p>
+
+      <br>
+      <table>
+         {% if name==10 %}
+            <tr>
+               <th><a href="/launched" onclick="myfunction()" title="click to start the web assistant.">
+                 <div class="listen" id="listening"><span id="demo">LISTEN</span></div>
+               </a> </th>
+            </tr>
+         {% endif %}
+      </table>
+
+      <script type="text/javascript">
+        function myfunction()
+        {
+          document.getElementById('demo').innerHTML = 'LISTENING';
+          document.getElementById("listening").style.backgroundColor='#CA7A42';
+          document.getElementById("demo").style.left='46.5%';
+          document.getElementById("listening").style.width='200px';
+          document.getElementById("listening").style.height='200px';
+          document.getElementById("listening").style.top='40%';
+          document.getElementById('demo').style.pointerEvents="none";
+          document.getElementById('listening').style.pointerEvents='none';
+        }
+
+      </script>
+        <a href="http:\\localhost:5000/" title="click to log out."><div class="logout"><span id="log">log out</span></div></a>
+      <div class="footer"></div>
+      <div class="left">
+        <fieldset class="field">
+          <legend>Commands</legend>
+          <ul>
+            <li>Goole Search-search for </li>
+            <li>Wikipedia Search-wiki page for </li>
+            <li>Video Search-video for </li>
+            <li>Simple Calculations-deep search </li>
+            <li>Current Affairs-what is,who was,who is,how,where,when,what are </li>
+            <li>Academic Search-academic search </li>
+            <li>Read the text from paperclip-read this text </li>
+            <li>Save the text from pyperclip-save this text </li>
+            <li>Mute the listening-silence please,resume listening </li>
+            <li>Quit-stop listening </li>
+          </ul>
+        </fieldset>
+      </div>
+  </body>
+</html>

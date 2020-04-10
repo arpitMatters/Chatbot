@@ -1,0 +1,53 @@
+body{
+  background-color: rgb(220, 220, 220);
+}
+form{
+  background-color: #FFAF74;
+  font-weight: bold;
+  text-align: center;
+  position: fixed;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+  width: 275px;
+  align-content: flex-start;
+  color: white;
+  padding-top: 10px;
+}
+.formbody{
+  background-color: #74c4ff;
+width: 300px;
+height: 300px;
+position: fixed;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+border-radius: 15%;
+}
+fieldset{
+    border: 2px solid white;
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    height: 170px;
+  }
+  h2{
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+  }
+  .heading{
+    background-color:#FFAF74;
+    width: 100%;
+    height: 50px;
+  }
+  .footer{
+    background-color: #FFAF74;
+    position: fixed;
+    bottom: 100%;
+    width: 75%;
+    height: 20px;
+    top: 675px;
+    margin-left: 150px;
+  }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Assistant Log In Page</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style2.css') }}">
+  </head>
+  <body>
+    <div class="heading">
+      <h2>Web Assistant</h2>
+    </div>
+    <div class="formbody">
+      <fieldset>
+        <legend>Log In</legend>
+    <form  action="http:\\localhost:5000/login" method="post">
+      <table>
+      <tr>
+        <td>User Name</td>
+        <td><input type="text" name="user" title="Enter Username" required></td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td><input type="password" name="pass" pattern="[0-9a-zA-Z_]{8,20}" title="Enter password which consist of atleast 8 and maximum 20 letters."required></td>
+      </tr>
+      <tr>
+        <td>
+        <input type="submit">
+        </td>
+        <td><input type="reset"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><a href="http:\\localhost:5000/changepass" title="click to change password."><font>forgot your password?</font></td>
+      </tr>
+      </table>
+    </form>
+  </fieldset>
+  </div>
+  <div class="footer">
+  </div>
+  </body>
+</html>
